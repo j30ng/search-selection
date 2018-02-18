@@ -1,0 +1,15 @@
+{
+    "name": "Search Selection",
+    "version": "1.0",
+    "author": "j30ng",
+    "permissions": ["contextMenus", "runtime"],
+    "background": {
+        "scripts": ["context-menu.js"],
+        "persistent": true
+    },
+    "content_scripts" : [
+    {
+        "matches" : [ "*://*/*" ],
+        "js": ["messenger.js"]
+    }]
+}
